@@ -38,7 +38,7 @@
 		</dependency>
 
 	</dependencies>
-	<distributionmanagement>
+<!--	<distributionmanagement>
 	<repositories>
 	<snapshot>
 		<id>nexus</id>
@@ -50,7 +50,7 @@
         	</release>
 	</repositories>	
 	</distributionmanagement>
-
+-->
 	<!-- Committing and updating changes through Maven, by using below mvn command. 
 		For Commiting mvn -Dmessage="Updated using maven" scm:checkin For updating 
 		mvn scm:update -->
