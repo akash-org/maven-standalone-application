@@ -21,12 +21,13 @@
 		<sonar.host.url>http://192.168.60.166:9000/</sonar.host.url>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-         <repositories>
+       <!--  <repositories>
 	<repository>
 		<id>nexus</id>
 		<url>http://192.168.60.166:8081/repository/akash-proxy/</url>
 	</repository>
-	</repositories>	
+	</repositories>
+ -->
 	<dependencies>
 
 		<dependency>
@@ -37,7 +38,7 @@
 		</dependency>
 
 	</dependencies>
-	<distributionmanagement>
+<!--	<distributionmanagement>
 	<repositories>
 	<snapshot>
 		<id>nexus</id>
@@ -49,7 +50,7 @@
         	</release>
 	</repositories>	
 	</distributionmanagement>
-
+-->
 	<!-- Committing and updating changes through Maven, by using below mvn command. 
 		For Commiting mvn -Dmessage="Updated using maven" scm:checkin For updating 
 		mvn scm:update -->
