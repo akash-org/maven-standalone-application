@@ -18,10 +18,15 @@
 	<description>Maven Standalone Application</description>
 
 	<properties>
-		<sonar.host.url>http://localhost:9000/</sonar.host.url>
+		<sonar.host.url>http://192.168.60.166:9000/</sonar.host.url>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-
+         <repositories>
+	<repository>
+		<id>nexus</id>
+		<url>http://192.168.60.166:8081/repository/akash-proxy/</url>
+	</repository>
+	</repositories>	
 	<dependencies>
 
 		<dependency>
@@ -32,6 +37,18 @@
 		</dependency>
 
 	</dependencies>
+	<distributionmanagement>
+	<repositories>
+	<snapshot>
+		<id>nexus</id>
+		<url>http://192.168.60.166:8081/repository/akash-snapshot/</url>
+	</snapshot>
+		<release>
+		<id>nexus</id>
+		<url>http://192.168.60.166:8081/repository/akash-release/</url>
+        	</release>
+	</repositories>	
+	</distributionmanagement>
 
 	<!-- Committing and updating changes through Maven, by using below mvn command. 
 		For Commiting mvn -Dmessage="Updated using maven" scm:checkin For updating 
